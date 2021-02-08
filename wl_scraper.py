@@ -99,11 +99,13 @@ def scraperWL(author_url,author_name,wd,filetypes=['PDF','MP3'],unzip=False):
         
     return df.replace(np.NaN,'NA')
 
-# Example:
+""" Example:
 
-path = r'C:\Users\m\Google Drive\35 WolneLektury'.replace('\\','/')+'/'
+path = 'C:/Users/books/'
 site_url = 'https://wolnelektury.pl/katalog/autor/bruno-schulz/'
 author = 'Schulz, Bruno'
 
 schulz = scraperWL(author_url,author_name,wd,filetypes=['PDF','MP3'])
 print(schulz)
+
+"""
